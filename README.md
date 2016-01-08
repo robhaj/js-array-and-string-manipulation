@@ -11,26 +11,55 @@
 The pop() method removes the last element from an array and returns that element.
 
 ###### Syntax
-.pop()
+```js
+var arr = ['duck', 'duck', 'goose'];
+arr.pop()
 
+> 'goose'
+```
 #### .push()
 The push() method adds one or more elements to the end of an array and returns the new length of the array.
 
 ###### Syntax
-.push()
+```js
+var arr = ['spoon', 'fork', 'knife'];
+arr.push('napkin')
 
+> 4
+
+console.log(arr)
+
+> ['spoon', 'fork', 'knife', 'napkin']
+```
 #### .shift()
 The shift() method removes the first element from an array and returns that element. This method changes the length of the array.
 
 ###### Syntax
-.shift()
+```js
+var arr = ['potato', 'blue', 'white', 'green']
+arr.shift()
+
+> 'potato'
+
+console.log(arr)
+
+> ['blue', 'white', 'green']
+```
 
 #### .unshift()
 Adds one or more elements to the front of an array and returns the new length of the array.
 
 ###### Syntax
-.unshift()
+```js
+var arr = ['Wes', 'Michael', 'Zach'];
+arr.unshift('Robby', 'Bradley')
 
+>5
+
+console.log(arr)
+
+> ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
+```
 #### .splice()
 Adds and/or removes elements from an array.
 
@@ -49,7 +78,24 @@ Sorts the elements of an array in place and returns the array.
 ###### Syntax
 .sort()
 
+#### .concat()
+Returns a new array comprised of this array joined with other array(s) and/or value(s).
+
+###### Syntax
+.concat()
+
+#### .join()
+Joins all elements of an array into a string.
+
+###### Syntax
+.join()
+
+
+
+
 <hr>
+
+
 
 
 ## Manipulating Strings
