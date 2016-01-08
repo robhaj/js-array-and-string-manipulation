@@ -8,60 +8,57 @@
 
 ### Array Methods
 #### .pop()
-The pop() method removes the last element from an array and returns that element. This method is destructive and modifies the array.
+The pop() method removes the last element from an array and returns that element. This method is destructive and modifies the array. If you call pop() on an empty array, it returns an undefined value.
 
 ###### Syntax
 ```js
 var arr = ['duck', 'duck', 'goose'];
-arr.pop()
 
+arr.pop()
 > 'goose'
 
 console.log(arr)
-
 > ['duck', 'duck']
 ```
 #### .push()
-The push() method adds one or more elements to the end of an array and returns the new length of the array.
+The push() method adds one or more elements to the end of an array and returns the new length of the array. This is also destructive and alters the array on which the method was called.
 
 ###### Syntax
 ```js
 var arr = ['spoon', 'fork', 'knife'];
-arr.push('napkin')
 
+arr.push('napkin')
 > 4
 
 console.log(arr)
-
 > ['spoon', 'fork', 'knife', 'napkin']
 ```
 #### .shift()
-The shift() method removes the first element from an array and returns that element. This method changes the length of the array.
+The shift() method is like the pop() method, only it works at the beginning of the array. It removes the first element from an array and returns that element. This method is destructive and changes the length of the array.
 
 ###### Syntax
 ```js
 var arr = ['potato', 'blue', 'white', 'green']
-arr.shift()
 
+arr.shift()
 > 'potato'
 
 console.log(arr)
-
 > ['blue', 'white', 'green']
 ```
 
 #### .unshift()
+The unshift() method is like the push() method, only it works at the beginning of the array.
 Adds one or more elements to the front of an array and returns the new length of the array.
 
 ###### Syntax
 ```js
 var arr = ['Wes', 'Michael', 'Zach'];
-arr.unshift('Robby', 'Bradley')
 
+arr.unshift('Robby', 'Bradley')
 > 5
 
 console.log(arr)
-
 > ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
 ```
 #### .splice()
@@ -74,12 +71,11 @@ Arguments
 ###### Syntax
 ```js
 var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
-arr.splice(1, 1)
 
+arr.splice(1, 1)
 > ['Bradley']
 
 arr.splice(2, 3)
-
 > ['Wes','Michael','Zach']
 ```
 #### .slice()
@@ -92,12 +88,11 @@ Extracts a section of an array and returns a new array.
 ###### Syntax
 ```js
 var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
-arr.slice(4)
 
+arr.slice(4)
 > ['Zach']
 
 arr.slice(2, 4)
-
 > ['Wes','Michael']
 ```
 
@@ -105,27 +100,47 @@ arr.slice(2, 4)
 Sorts the elements of an array in place and returns the array.
 
 ###### Syntax
-.sort()
+```js
+var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
 
+arr.sort()
+> ['Bradley', 'Michael', 'Robby', 'Wes', 'Zach']
+
+arr = [15,7,22,5,91]
+
+arr.sort()
+> [15, 22, 5, 7, 91]
+```
 #### .concat()
 Returns a new array comprised of this array joined with other array(s) and/or value(s).
 
 ###### Syntax
-.concat()
+```js
+var arr1 = ['Mercury', 'Venus', 'Earth', 'Mars']
+var arr2 = ['Jupiter','Saturn','Uranus','Neptune']
 
+arr1.concat(arr2)
+> [ 'Mercury',
+  'Venus',
+  'Earth',
+  'Mars',
+  'Jupiter',
+  'Saturn',
+  'Uranus',
+  'Neptune' ]
+```
 #### .join()
 Joins all elements of an array into a string.
 
 ###### Syntax
-.join()
+```js
+var arr = ['The','quick','brown','fox','jumped','over','the','lazy','dog']
 
-
-
+arr.join()
+> 'The,quick,brown,fox,jumped,over,the,lazy,dog'
+```
 
 <hr>
-
-
-
 
 ## Manipulating Strings
 ### Strings
