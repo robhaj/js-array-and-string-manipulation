@@ -54,7 +54,7 @@ Adds one or more elements to the front of an array and returns the new length of
 var arr = ['Wes', 'Michael', 'Zach'];
 arr.unshift('Robby', 'Bradley')
 
->5
+> 5
 
 console.log(arr)
 
@@ -63,14 +63,45 @@ console.log(arr)
 #### .splice()
 Adds and/or removes elements from an array.
 
+- Arguments
+-- start
+--- Index at which to start changing the array.
+-- deleteCount
+--- An integer indicating the number of old array elements to remove.
+```js
 ###### Syntax
-.splice()
+var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
+arr.splice(1, 1)
 
+> ['Bradley']
+
+arr.splice(2, 3)
+
+> ['Wes','Michael','Zach']
+```
 #### .slice()
 Extracts a section of an array and returns a new array.
 
+- Arguments
+-- begin
+--- Zero-based index at which to begin extraction.
+--- If begin is omitted, slice begins from index 0.
+-- end
+--- Zero-based index at which to end extraction. slice extracts up to but not including end.
+--- If end is omitted, slice extracts to the end of the sequence (arr.length).
+
 ###### Syntax
-.slice()
+```js
+###### Syntax
+var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
+arr.slice(4)
+
+> ['Zach']
+
+arr.slice(2, 4)
+
+> ['Wes','Michael']
+```
 
 #### .sort()
 Sorts the elements of an array in place and returns the array.
