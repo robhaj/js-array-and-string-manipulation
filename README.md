@@ -8,7 +8,7 @@
 
 ### Array Methods
 #### .pop()
-The pop() method removes the last element from an array and returns that element.
+The pop() method removes the last element from an array and returns that element. This method is destructive and modifies the array.
 
 ###### Syntax
 ```js
@@ -16,6 +16,10 @@ var arr = ['duck', 'duck', 'goose'];
 arr.pop()
 
 > 'goose'
+
+console.log(arr)
+
+> ['duck', 'duck']
 ```
 #### .push()
 The push() method adds one or more elements to the end of an array and returns the new length of the array.
