@@ -1,43 +1,91 @@
-# js-array-and-string-manipulation
-Basic JS array and string manipulation walkthrough
+# Array and String Methods in JavaScript
 
-# Manipulating Arrays
-JavaScript arrays are used to store multiple values in a single variable
+## Manipulating Arrays
+### Arrays
+- JavaScript arrays are used to store multiple values in a single variable
 
-An array can hold many values under a single name, and you can access the values by referring to an index number.
+- An array can hold many values under a single name, and you can access the values by referring to an index number.
 
-# .pop()
+### Array Methods
+#### .pop()
 The pop() method removes the last element from an array and returns that element.
 
-## Syntax
+###### Syntax
 .pop()
 
-# .push()
+#### .push()
 The push() method adds one or more elements to the end of an array and returns the new length of the array.
 
-## Syntax
+###### Syntax
 .push()
 
-# .shift()
+#### .shift()
 The shift() method removes the first element from an array and returns that element. This method changes the length of the array.
 
-## Syntax
+###### Syntax
 .shift()
 
-# .unshift()
+#### .unshift()
 Adds one or more elements to the front of an array and returns the new length of the array.
 
-## Syntax
+###### Syntax
 .unshift()
 
-# .splice()
+#### .splice()
 Adds and/or removes elements from an array.
 
-## Syntax
+###### Syntax
 .splice()
 
-# .slice()
+#### .slice()
 Extracts a section of an array and returns a new array.
 
-## Syntax
+###### Syntax
 .slice()
+
+## Manipulating Strings
+### Strings
+- A JavaScript string stores a series of characters like "John Doe".
+
+- String indexes are zero-based: The first character is in position 0, the second in 1, and so on.
+
+### String Methods
+
+#### .concat()
+Joins two or more strings, and returns a new joined strings
+
+###### Syntax
+.concat()
+
+#### .toUpperCase()
+Converts a string to uppercase letters
+
+###### Syntax
+.toUpperCase()
+
+#### .toLowerCase()
+Converts a string to lowercase letters
+
+###### Syntax
+.toLowerCase()
+
+#### .charAt()
+Returns the character at the specified index
+
+#### .slice()
+Extracts a part of a string and returns a new string
+
+###### Syntax
+.slice()
+
+#### .split()
+Splits a string into an array of substrings
+
+###### Syntax
+.split()
+
+#### .trim()
+Removes whitespace from both ends of a string
+
+###### Syntax
+.trim()
