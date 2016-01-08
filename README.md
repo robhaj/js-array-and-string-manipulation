@@ -63,13 +63,12 @@ console.log(arr)
 #### .splice()
 Adds and/or removes elements from an array.
 
-- Arguments
--- start
---- Index at which to start changing the array.
--- deleteCount
---- An integer indicating the number of old array elements to remove.
-```js
+Arguments
+- start - Index at which to start changing the array.
+- deleteCount - An integer indicating the number of old array elements to remove.
+
 ###### Syntax
+```js
 var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
 arr.splice(1, 1)
 
@@ -82,17 +81,12 @@ arr.splice(2, 3)
 #### .slice()
 Extracts a section of an array and returns a new array.
 
-- Arguments
--- begin
---- Zero-based index at which to begin extraction.
---- If begin is omitted, slice begins from index 0.
--- end
---- Zero-based index at which to end extraction. slice extracts up to but not including end.
---- If end is omitted, slice extracts to the end of the sequence (arr.length).
+ Arguments
+- begin - Index at which to begin extraction. If begin is omitted, slice begins from index 0.
+- end -  Index at which to end extraction. slice extracts up to but not including end. If end is omitted, slice extracts to the end of the sequence (arr.length).
 
 ###### Syntax
 ```js
-###### Syntax
 var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
 arr.slice(4)
 
