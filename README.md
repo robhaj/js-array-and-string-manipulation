@@ -6,6 +6,8 @@
 
 - An array can hold many values under a single name, and you can access the values by referring to an index number.
 
+- Array indexes start at 0, the first element in the array is index position 0.
+
 ### Array Methods
 #### .pop()
 The pop() method removes the last element from an array and returns that element. This method is destructive and modifies the array. If you call pop() on an empty array, it returns an undefined value.
@@ -19,6 +21,11 @@ arr.pop()
 
 console.log(arr)
 > ['duck', 'duck']
+
+arr = [];
+
+arr.pop()
+> undefined
 ```
 #### .push()
 The push() method adds one or more elements to the end of an array and returns the new length of the array. This is also destructive and alters the array on which the method was called.
@@ -32,6 +39,12 @@ arr.push('napkin')
 
 console.log(arr)
 > ['spoon', 'fork', 'knife', 'napkin']
+
+arr.push('plate','bowl')
+> 6
+
+console.log(arr)
+> ['spoon', 'fork', 'knife', 'napkin', 'plate', 'bowl']
 ```
 #### .shift()
 The shift() method is like the pop() method, only it works at the beginning of the array. It removes the first element from an array and returns that element. This method is destructive and changes the length of the array.
@@ -60,6 +73,7 @@ arr.unshift('Robby', 'Bradley')
 
 console.log(arr)
 > ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
+
 ```
 #### .splice()
 Adds and/or removes elements from an array.
@@ -75,11 +89,23 @@ var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach'];
 arr.splice(1, 1)
 > ['Bradley']
 
+console.log(arr)
+> ['Robby', 'Wes', 'Michael', 'Zach']
+
 arr.splice(2, 3)
-> ['Wes','Michael','Zach']
+> ['Michael','Zach']
+
+console.log(arr);
+> ['Robby', 'Wes']
+
+arr.splice(1)
+> ['Wes']
+
+console.log(arr);
+> ['Robby']
 ```
 #### .slice()
-Extracts a section of an array and returns a new array.
+Extracts a section of an array and returns a new array. This is not destructive as the original array remains unchanged.
 
  Arguments
 - begin - Index at which to begin extraction. If begin is omitted, slice begins from index 0.
@@ -92,12 +118,18 @@ var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach'];
 arr.slice(4)
 > ['Zach']
 
+console.log(arr)
+>['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
+
 arr.slice(2, 4)
 > ['Wes','Michael']
+
+console.log(arr)
+>['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
 ```
 
 #### .sort()
-Sorts the elements of an array in place and returns the array.
+Sorts the elements of an array in place and returns the array. If no compare function is passed as an argument it is sorted according to each character's Unicode code point value, according to the string conversion of each element. This is why just calling .sort() will not order numbers logically but rather their Unicode value.
 
 ###### Syntax
 ```js
@@ -106,6 +138,7 @@ var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach'];
 arr.sort()
 > ['Bradley', 'Michael', 'Robby', 'Wes', 'Zach']
 
+arr = [5,2,3,4,1]
 arr = [15,7,22,5,91]
 
 arr.sort()
