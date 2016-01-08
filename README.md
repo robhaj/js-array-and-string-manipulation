@@ -43,6 +43,15 @@ Extracts a section of an array and returns a new array.
 ###### Syntax
 .slice()
 
+#### .sort()
+Sorts the elements of an array in place and returns the array.
+
+###### Syntax
+.sort()
+
+<hr>
+
+
 ## Manipulating Strings
 ### Strings
 - A JavaScript string stores a series of characters like "John Doe".
