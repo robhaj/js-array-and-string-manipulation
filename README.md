@@ -38,7 +38,7 @@ The shift() method is like the pop() method, only it works at the beginning of t
 
 ###### Syntax
 ```js
-var arr = ['potato', 'blue', 'white', 'green']
+var arr = ['potato', 'blue', 'white', 'green'];
 
 arr.shift()
 > 'potato'
@@ -70,7 +70,7 @@ Arguments
 
 ###### Syntax
 ```js
-var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
+var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach'];
 
 arr.splice(1, 1)
 > ['Bradley']
@@ -87,7 +87,7 @@ Extracts a section of an array and returns a new array.
 
 ###### Syntax
 ```js
-var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
+var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach'];
 
 arr.slice(4)
 > ['Zach']
@@ -101,7 +101,7 @@ Sorts the elements of an array in place and returns the array.
 
 ###### Syntax
 ```js
-var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
+var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach'];
 
 arr.sort()
 > ['Bradley', 'Michael', 'Robby', 'Wes', 'Zach']
@@ -116,25 +116,18 @@ Returns a new array comprised of this array joined with other array(s) and/or va
 
 ###### Syntax
 ```js
-var arr1 = ['Mercury', 'Venus', 'Earth', 'Mars']
-var arr2 = ['Jupiter','Saturn','Uranus','Neptune']
+var arr1 = ['Mercury', 'Venus', 'Earth', 'Mars'];
+var arr2 = ['Jupiter','Saturn','Uranus','Neptune'];
 
 arr1.concat(arr2)
-> [ 'Mercury',
-  'Venus',
-  'Earth',
-  'Mars',
-  'Jupiter',
-  'Saturn',
-  'Uranus',
-  'Neptune' ]
+> ['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune' ]
 ```
 #### .join()
 Joins all elements of an array into a string.
 
 ###### Syntax
 ```js
-var arr = ['The','quick','brown','fox','jumped','over','the','lazy','dog']
+var arr = ['The','quick','brown','fox','jumped','over','the','lazy','dog'];
 
 arr.join()
 > 'The,quick,brown,fox,jumped,over,the,lazy,dog'
