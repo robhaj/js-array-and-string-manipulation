@@ -6,5 +6,5 @@ Using both the .pop() and the .push() methods :
 ```js
   var arr = ['one', 'two', 'three', 'four', 'six']
 
-  ans = ['one', 'two', 'three', 'four']
+  ans = ['one', 'two', 'three', 'four', 'five']
 ```
