@@ -108,7 +108,11 @@ console.log(arr);
 Extracts a section of an array and returns a new array. This is not destructive as the original array remains unchanged.
 
  Arguments
-- begin - Index at which to begin extraction. If begin is omitted, slice begins from index 0.
+- begin - Index at which to begin extraction.
+
+<!-- If begin is omitted, slice begins from index 0.
+if begin === null, slice begins from 0 -->
+
 - end -  Index at which to end extraction. slice extracts up to but not including end. If end is omitted, slice extracts to the end of the sequence (arr.length).
 
 ###### Syntax
