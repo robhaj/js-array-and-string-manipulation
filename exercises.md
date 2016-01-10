@@ -63,7 +63,7 @@ Using ```.slice()```
 
   var names = ['jeff', 'tony', 'tabitha', 'annie', 'edward', 'james']
 
-  ans => ['annie', 'edward', 'james]
+  ans => ['annie', 'edward', 'james']
 ```
 
 Using ```.concat()``` :
