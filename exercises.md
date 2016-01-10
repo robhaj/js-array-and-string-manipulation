@@ -1,6 +1,6 @@
 For the first 6 questions, use the given methods to modify the top array so that it reads the same as the one underneath. console log the array to make sure it has been changed.
 
-1. Using ```.pop()``` :
+Using ```.pop()``` :
 
 ```js
   var nums = ['one', 'two', 'three', 'four', 'six']
@@ -8,7 +8,7 @@ For the first 6 questions, use the given methods to modify the top array so that
   ans => ['one', 'two', 'three', 'four', 'five']
 ```
 
-1. Using ```.push()``` :
+Using ```.push()``` :
 
 ```js
   var letters = ['a', 'b', 'c', 'd']
@@ -16,7 +16,7 @@ For the first 6 questions, use the given methods to modify the top array so that
   ans => ['a', 'b', 'c', 'd', 'e']
 ```
 
-1. Using ```.shift()``` :
+Using ```.shift()``` :
 
 ```js
   var vehicles = ['lollipop', 'car', 'truck', 'tank']
@@ -24,7 +24,7 @@ For the first 6 questions, use the given methods to modify the top array so that
   ans => ['car', 'truck', 'tank']
 ```
 
-1. Using ```.unshift()``` :
+Using ```.unshift()``` :
 
  ```js
   var sports = ['football', 'baseball', 'hockey']
@@ -32,7 +32,7 @@ For the first 6 questions, use the given methods to modify the top array so that
   ans => ['rugby', 'football', 'baseball', 'hockey']
 ```
 
-5. Using ```.splice()``` :
+Using ```.splice()``` :
 
 ```js
   var years = [1990, 2015, 1066, 43, 90, 1607]
@@ -44,7 +44,7 @@ For the first 6 questions, use the given methods to modify the top array so that
   ans => ['The Great Escape', 'Blade Runner', 'Indiana Jones and the Last Crusade']
 ```
 
-6. Using ```.sort()``` :
+Using ```.sort()``` :
 
 ```js
   var greekLetters = ['beta', 'gamma', 'alpha', 'epsilon', 'delta']
@@ -54,7 +54,7 @@ For the first 6 questions, use the given methods to modify the top array so that
 
 For the next X questions, simply return the answer. The original array/arrays should not be modified.
 
-7. Using ```.slice()```
+Using ```.slice()```
 
 ```js
   var animals = ['dog', 'cat', 'eagle', 'cow']
@@ -66,7 +66,7 @@ For the next X questions, simply return the answer. The original array/arrays sh
   ans => ['annie', 'edward', 'james]
 ```
 
-8. Using ```.concat()``` :
+Using ```.concat()``` :
 
 ```js
   var firstNums = [1, 2, 3]
@@ -76,7 +76,7 @@ For the next X questions, simply return the answer. The original array/arrays sh
   ans => [1, 2, 3, 4, 5, 6]
 ```
 
-9. Using ```.join()``` :
+Using ```.join()``` :
 
 ```js
   var arr = ['Bradley', 'is', 'super', 'amazing']
@@ -86,7 +86,7 @@ For the next X questions, simply return the answer. The original array/arrays sh
 
 Next, use the string methods given to return the ans underneath
 
-10. Using ```.concat()``` :
+Using ```.concat()``` :
 
 ```js
   var str1 = 'Javascript is really '
@@ -96,7 +96,7 @@ Next, use the string methods given to return the ans underneath
   ans => 'Javascript is really really really great'
 ```
 
-11. Using ```.toUpperCase()```
+Using ```.toUpperCase()```
 
 
 ```js
@@ -105,7 +105,7 @@ Next, use the string methods given to return the ans underneath
   ans => 'NOW I'M SHOUTING'
 ```
 
-12. Using ```.toLowerCase()``` :
+Using ```.toLowerCase()``` :
 
 ```js
   var shout = 'EVERYONE BE QUIET'
@@ -113,7 +113,7 @@ Next, use the string methods given to return the ans underneath
   ans => 'everyone be quiet'
 ```
 
-13. Using ```.charAt()``` :
+Using ```.charAt()``` :
 
 ```js
   var string = 'Super Amazing Stuff'
@@ -121,7 +121,7 @@ Next, use the string methods given to return the ans underneath
   ans => 'z'
 ```
 
-14. Using ```.slice()``` :
+Using ```.slice()``` :
 
 ```js
   var fullTitle = 'Lord Edward Swivington the 3rd'
@@ -129,7 +129,7 @@ Next, use the string methods given to return the ans underneath
   ans => 'Edward Swivington'
 ```
 
-15. Using ```.split()``` :
+Using ```.split()``` :
 
 ```js
   var year = '1990'
@@ -141,7 +141,7 @@ Next, use the string methods given to return the ans underneath
   ans => ['Why', 'did', 'it', 'have', 'to', 'be', 'snakes?']
 ```
 
-16. Using ```.trim()``` :
+Using ```.trim()``` :
 
 ```js
   var lyric = '    Here I am. ROCK you like a hurricane.      '
