@@ -149,9 +149,7 @@ Using ```.trim()``` :
   ans => 'Here I am. ROCK you like a hurricane.'
 ```
 
-Stretch exercises :
 
-1.
 
 
 
