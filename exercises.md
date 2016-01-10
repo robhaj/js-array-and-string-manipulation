@@ -1,4 +1,4 @@
-For the first 6 questions, use the given methods to modify the top array so that it reads the same as the one underneath. console log the array to make sure it has been changed.
+For the first set of questions, use the given methods to modify the top array so that it reads the same as the one underneath. console log the array to make sure it has been changed.
 
 Using ```.pop()``` :
 
@@ -52,7 +52,7 @@ Using ```.sort()``` :
   ans => ['alpha', 'beta', 'delta', 'epsilon', 'gamma']
 ```
 
-For the next X questions, simply return the answer. The original array/arrays should not be modified.
+For the next set of questions, simply return the answer. The original array/arrays should not be modified.
 
 Using ```.slice()```
 
@@ -147,7 +147,7 @@ Using ```.trim()``` :
   var lyric = '    Here I am. ROCK you like a hurricane.      '
 
   ans => 'Here I am. ROCK you like a hurricane.'
-```
+```g
 
 
 
