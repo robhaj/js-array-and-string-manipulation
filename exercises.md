@@ -3,9 +3,9 @@ For the first set of questions, use the given methods to modify the top array so
 Using ```.pop()``` :
 
 ```js
-  var nums = ['one', 'two', 'three', 'four', 'six']
+  var nums = ['one', 'two', 'three', 'four', 'ten']
 
-  ans => ['one', 'two', 'three', 'four', 'five']
+  ans => ['one', 'two', 'three', 'four']
 ```
 
 Using ```.push()``` :
