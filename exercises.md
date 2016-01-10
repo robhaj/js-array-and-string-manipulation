@@ -1,3 +1,5 @@
+###Section 1
+
 For the first set of questions, use the given methods to modify the top array so that it reads the same as the one underneath. console log the array to make sure it has been changed.
 
 Using ```.pop()``` :
@@ -52,6 +54,8 @@ Using ```.sort()``` :
   ans => ['alpha', 'beta', 'delta', 'epsilon', 'gamma']
 ```
 
+###Section 2
+
 For the next set of questions, simply return the answer. The original array/arrays should not be modified.
 
 Using ```.slice()```
@@ -83,6 +87,8 @@ Using ```.join()``` :
 
   ans => 'Bradley,is,super,amazing'
 ```
+
+###Section 3
 
 Next, use the string methods given to return the ans underneath
 
