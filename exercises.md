@@ -100,9 +100,9 @@ Using ```.toUpperCase()```
 
 
 ```js
-  var talk = 'Now I'm Shouting'
+  var talk = 'Now I\'m Shouting'
 
-  ans => 'NOW I'M SHOUTING'
+  ans => 'NOW I\'M SHOUTING'
 ```
 
 Using ```.toLowerCase()``` :
@@ -147,7 +147,7 @@ Using ```.trim()``` :
   var lyric = '    Here I am. ROCK you like a hurricane.      '
 
   ans => 'Here I am. ROCK you like a hurricane.'
-```
+```g
 
 
 
