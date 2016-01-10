@@ -155,6 +155,18 @@ Using ```.trim()``` :
   ans => 'Here I am. ROCK you like a hurricane.'
 ```
 
+###Section 4
+
+1. Write a function that will find the index of all the "o"s in "Oy! I am a normal string!" regardless of case.
+
+1. Write a function which accepts a number as input and inserts dashes (-) between every two numbers. For example if you accept 025468 the output should be 02-54-68
+
+1. Write a function to remove every item in an array that is not a number.
+
+1. Write a function to add up all the numbers in any given year. The year will be given as a string, the output should be a number. For example the input ```'1470'``` should give ```12```
+
+1. Write a function that will take in an array of full names, and only return the first name of each person. For example ```['Bradley Bouley', 'Robert Hajek']``` should return ```['Bradley', 'Robert']```
+
 
 
 
