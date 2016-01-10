@@ -8,7 +8,7 @@ For the first 6 questions, use the given methods to modify the top array so that
   ans => ['one', 'two', 'three', 'four', 'five']
 ```
 
-2. Using ```.push()``` :
+1. Using ```.push()``` :
 
 ```js
   var letters = ['a', 'b', 'c', 'd']
@@ -16,7 +16,7 @@ For the first 6 questions, use the given methods to modify the top array so that
   ans => ['a', 'b', 'c', 'd', 'e']
 ```
 
-3. Using ```.shift()``` :
+1. Using ```.shift()``` :
 
 ```js
   var vehicles = ['lollipop', 'car', 'truck', 'tank']
@@ -24,7 +24,7 @@ For the first 6 questions, use the given methods to modify the top array so that
   ans => ['car', 'truck', 'tank']
 ```
 
-4. Using ```.unshift()``` :
+1. Using ```.unshift()``` :
 
  ```js
   var sports = ['football', 'baseball', 'hockey']
@@ -148,6 +148,10 @@ Next, use the string methods given to return the ans underneath
 
   ans => 'Here I am. ROCK you like a hurricane.'
 ```
+
+Stretch exercises :
+
+1.
 
 
 
