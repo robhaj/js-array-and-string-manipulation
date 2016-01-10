@@ -143,6 +143,9 @@ arr.sort()
 > ['Bradley', 'Michael', 'Robby', 'Wes', 'Zach']
 
 arr = [5,2,3,4,1]
+
+> [1, 2, 3, 4, 5]
+
 arr = [15,7,22,5,91]
 
 arr.sort()
