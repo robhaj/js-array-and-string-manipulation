@@ -259,6 +259,7 @@ Extracts a part of a string and returns a new string
 Parameters
 - beginSlice - The zero-based index at which to begin extraction. If negative, it is treated as sourceLength + beginSlice where sourceLength is the length of the string (for example, if beginSlice is -3 it is treated as sourceLength - 3).
 - endSlice (Optional) - The zero-based index at which to end extraction. If omitted, slice() extracts to the end of the string. If negative, it is treated as sourceLength + endSlice where sourceLength is the length of the string (for example, if endSlice is -3 it is treated as sourceLength - 3).
+
 ###### Syntax
 ```js
 var str = 'Slice the fruits - Banana, Orange, Apple'
