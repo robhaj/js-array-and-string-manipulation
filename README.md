@@ -176,7 +176,9 @@ Joins all elements of an array into a string.
 Arguments
 - separator (optional)
 Specifies a string to separate each element of the array. The separator is converted to a string if necessary. If omitted, the array elements are separated with a comma. If separator is an empty string, all elements are joined without any characters in between them.
+
 ###### Syntax
+
 ```js
 var arr = ['The','quick','brown','fox','jumped','over','the','lazy','dog'];
 
@@ -203,8 +205,9 @@ arr.join('')
 #### .concat(string2...stringN)
 Joins two or more strings, and returns a new joined strings
 
-- Parameters
-Strings to concatenate to this string.
+Parameters
+- Strings to concatenate to this string.
+
 ###### Syntax
 ```js
 var str1 = "Hello ";
@@ -237,18 +240,42 @@ str.toLowerCase()
 #### .charAt()
 Returns the character at the specified index
 
+Parameters
+- Specified Index
 ###### Syntax
 ```js
+var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
-
+str.charAt()
+> 'A'
+str.charAt(0)
+> 'A'
+str.charAt(25)
+> 'Z'
 ```
 #### .slice()
 Extracts a part of a string and returns a new string
 
+Parameters
+- beginSlice - The zero-based index at which to begin extraction. If negative, it is treated as sourceLength + beginSlice where sourceLength is the length of the string (for example, if beginSlice is -3 it is treated as sourceLength - 3).
+- endSlice (Optional) - The zero-based index at which to end extraction. If omitted, slice() extracts to the end of the string. If negative, it is treated as sourceLength + endSlice where sourceLength is the length of the string (for example, if endSlice is -3 it is treated as sourceLength - 3).
 ###### Syntax
 ```js
-.slice()
+var str = 'Slice the fruits - Banana, Orange, Apple'
+
+str.slice(19)
+> 'Banana, Orange, Apple'
+
+str.slice(19, 25)
+> 'Banana'
+
+str.slice(27, 33)
+> 'Orange'
+
+str.slice(35, 40)
+> 'Apple'
 ```
+
 #### .split()
 Splits a string into an array of substrings
 
@@ -256,9 +283,13 @@ Parameters
 
 - Seperator (optional) Specifies the character(s) to use for separating the string. The separator is treated as a string or a regular expression. If separator is omitted, the array returned contains one element consisting of the entire string. If separator is an empty string, str is converted to an array of characters.
 - Limit (optional) Integer specifying a limit on the number of splits to be found. The split() method still splits on every match of separator, but it truncates the returned array to at most limit elements.
+
 ###### Syntax
 ```js
+var str = '1062 Delaware St. Denver CO, 80204';
 
+str.split('.')
+> ['1062 Delaware St', ' Denver CO, 80204']
 ```
 #### .trim()
 Removes whitespace from both ends of a string
