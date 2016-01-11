@@ -228,6 +228,7 @@ arr.join('')
 - [.slice()](https://github.com/robhaj/js-array-and-string-manipulation#slice)
 - [.split()](https://github.com/robhaj/js-array-and-string-manipulation#split)
 - [.trim()](https://github.com/robhaj/js-array-and-string-manipulation#trim)
+- [.replace()](https://github.com/robhaj/js-array-and-string-manipulation#replace)
 
 #### .concat(string2...stringN)
 Joins two or more strings, and returns a new joined strings. Alternatively you can use the arithmetic operator, +.
@@ -334,4 +335,14 @@ var str = ' 1-800-867-5309   ';
 
 str.trim()
 > '1-800-867-5309'
+```
+
+#### .replace()
+
+
+###### Syntax
+```js
+var str = 'test';
+
+str.replace()
 ```
