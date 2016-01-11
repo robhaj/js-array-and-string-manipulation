@@ -75,7 +75,7 @@ console.log(arr)
 > ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
 
 ```
-#### .splice()
+#### .splice(start, deleteCount)
 Adds and/or removes elements from an array.
 
 Arguments
@@ -104,7 +104,7 @@ arr.splice(1)
 console.log(arr);
 > ['Robby']
 ```
-#### .slice()
+#### .slice(begin, end)
 Extracts a section of an array and returns a new array. This is not destructive as the original array remains unchanged.
 
  Arguments
@@ -132,8 +132,12 @@ console.log(arr)
 >['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
 ```
 
-#### .sort()
+#### .sort(compareFunction)
 Sorts the elements of an array in place and returns the array. If no compare function is passed as an argument it is sorted according to each character's Unicode code point value, according to the string conversion of each element. This is why just calling .sort() will not order numbers logically but rather their Unicode value.
+
+Arguments
+- compareFunction
+Optional. Specifies a function that defines the sort order. If omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
 
 ###### Syntax
 ```js
@@ -142,11 +146,15 @@ var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach'];
 arr.sort()
 > ['Bradley', 'Michael', 'Robby', 'Wes', 'Zach']
 
-arr = [5,2,3,4,1]
+console.log(arr)
+> ['Bradley', 'Michael', 'Robby', 'Wes', 'Zach']
 
+arr = [5, 2, 3, 4 ,1]
+
+arr.sort()
 > [1, 2, 3, 4, 5]
 
-arr = [15,7,22,5,91]
+arr = [15, 7, 22, 5, 91]
 
 arr.sort()
 > [15, 22, 5, 7, 91]
@@ -162,15 +170,24 @@ var arr2 = ['Jupiter','Saturn','Uranus','Neptune'];
 arr1.concat(arr2)
 > ['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune' ]
 ```
-#### .join()
+#### .join(seperator)
 Joins all elements of an array into a string.
 
+Arguments
+- separator (optional)
+Specifies a string to separate each element of the array. The separator is converted to a string if necessary. If omitted, the array elements are separated with a comma. If separator is an empty string, all elements are joined without any characters in between them.
 ###### Syntax
 ```js
 var arr = ['The','quick','brown','fox','jumped','over','the','lazy','dog'];
 
+arr.join(' ')
+> 'The quick brown fox jumped over the lazy dog'
+
 arr.join()
 > 'The,quick,brown,fox,jumped,over,the,lazy,dog'
+
+arr.join('')
+> 'Thequickbrownfoxjumpedoverthelazydog'
 ```
 
 <hr>
