@@ -8,7 +8,19 @@
 
 - Array indexes start at 0, the first element in the array is index position 0.
 
-### Array Methods
+### Some Array Methods
+
+- [.pop()](https://github.com/robhaj/js-array-and-string-manipulation#pop)
+- [.push()](https://github.com/robhaj/js-array-and-string-manipulation#push)
+- [.shift()](https://github.com/robhaj/js-array-and-string-manipulation#shift)
+- [.unshift()](https://github.com/robhaj/js-array-and-string-manipulation#pop)
+- [.splice()](https://github.com/robhaj/js-array-and-string-manipulation#splice)
+- [.slice()](https://github.com/robhaj/js-array-and-string-manipulation#slice)
+- [.sort()](https://github.com/robhaj/js-array-and-string-manipulation#sort)
+- [.concat()](https://github.com/robhaj/js-array-and-string-manipulation#pop)
+- [.join()](https://github.com/robhaj/js-array-and-string-manipulation#join)
+
+
 #### .pop()
 The pop() method removes the last element from an array and returns that element. This method is destructive and modifies the array. If you call pop() on an empty array, it returns an undefined value.
 
