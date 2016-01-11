@@ -200,41 +200,73 @@ arr.join('')
 
 ### String Methods
 
-#### .concat()
+#### .concat(string2...stringN)
 Joins two or more strings, and returns a new joined strings
 
+- Parameters
+Strings to concatenate to this string.
 ###### Syntax
-.concat()
+```js
+var str1 = "Hello ";
+var str2 = "world!";
+var str3 = " Have a nice day!";
 
+str1.concat(str2,str3)
+> 'Hello world! Have a nice day!'
+```
 #### .toUpperCase()
 Converts a string to uppercase letters
 
 ###### Syntax
-.toUpperCase()
+```js
+var str = 'lol'
 
+str.toUpperCase()
+> 'LOL'
+```
 #### .toLowerCase()
 Converts a string to lowercase letters
 
 ###### Syntax
-.toLowerCase()
+```js
+var str = 'HELLO WORLD!'
 
+str.toLowerCase()
+> 'hello world!'
+```
 #### .charAt()
 Returns the character at the specified index
 
+###### Syntax
+```js
+
+
+```
 #### .slice()
 Extracts a part of a string and returns a new string
 
 ###### Syntax
+```js
 .slice()
-
+```
 #### .split()
 Splits a string into an array of substrings
 
-###### Syntax
-.split()
+Parameters
 
+- Seperator (optional) Specifies the character(s) to use for separating the string. The separator is treated as a string or a regular expression. If separator is omitted, the array returned contains one element consisting of the entire string. If separator is an empty string, str is converted to an array of characters.
+- Limit (optional) Integer specifying a limit on the number of splits to be found. The split() method still splits on every match of separator, but it truncates the returned array to at most limit elements.
+###### Syntax
+```js
+
+```
 #### .trim()
 Removes whitespace from both ends of a string
 
 ###### Syntax
-.trim()
+```js
+var phoneNumber = ' 1-800-867-5309   ';
+
+phoneNumber.trim()
+> '1-800-867-5309'
+```
