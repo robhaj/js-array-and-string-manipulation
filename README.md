@@ -95,13 +95,13 @@ console.log(arr)
 arr.splice(2, 3)
 > ['Michael','Zach']
 
-console.log(arr);
+console.log(arr)
 > ['Robby', 'Wes']
 
 arr.splice(1)
 > ['Wes']
 
-console.log(arr);
+console.log(arr)
 > ['Robby']
 ```
 #### .slice(begin, end)
@@ -222,7 +222,7 @@ Converts a string to uppercase letters
 
 ###### Syntax
 ```js
-var str = 'lol'
+var str = 'lol';
 
 str.toUpperCase()
 > 'LOL'
@@ -232,7 +232,7 @@ Converts a string to lowercase letters
 
 ###### Syntax
 ```js
-var str = 'HELLO WORLD!'
+var str = 'HELLO WORLD!';
 
 str.toLowerCase()
 > 'hello world!'
@@ -242,9 +242,10 @@ Returns the character at the specified index
 
 Parameters
 - Specified Index
+
 ###### Syntax
 ```js
-var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
 str.charAt()
 > 'A'
@@ -260,7 +261,9 @@ Parameters
 - beginSlice - The zero-based index at which to begin extraction. If negative, it is treated as sourceLength + beginSlice where sourceLength is the length of the string (for example, if beginSlice is -3 it is treated as sourceLength - 3).
 - endSlice (Optional) - The zero-based index at which to end extraction. If omitted, slice() extracts to the end of the string. If negative, it is treated as sourceLength + endSlice where sourceLength is the length of the string (for example, if endSlice is -3 it is treated as sourceLength - 3).
 
+
 ###### Syntax
+
 ```js
 var str = 'Slice the fruits - Banana, Orange, Apple'
 
@@ -297,8 +300,8 @@ Removes whitespace from both ends of a string
 
 ###### Syntax
 ```js
-var phoneNumber = ' 1-800-867-5309   ';
+var str = ' 1-800-867-5309   ';
 
-phoneNumber.trim()
+str.trim()
 > '1-800-867-5309'
 ```
