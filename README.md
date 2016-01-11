@@ -14,11 +14,11 @@
 - [.push()](https://github.com/robhaj/js-array-and-string-manipulation#push)
 - [.shift()](https://github.com/robhaj/js-array-and-string-manipulation#shift)
 - [.unshift()](https://github.com/robhaj/js-array-and-string-manipulation#pop)
-- [.splice()](https://github.com/robhaj/js-array-and-string-manipulation#splice)
-- [.slice()](https://github.com/robhaj/js-array-and-string-manipulation#slice)
-- [.sort()](https://github.com/robhaj/js-array-and-string-manipulation#sort)
+- [.splice()](https://github.com/robhaj/js-array-and-string-manipulation#splicestart-deletecount)
+- [.slice()](https://github.com/robhaj/js-array-and-string-manipulation#slicebegin-end)
+- [.sort()](https://github.com/robhaj/js-array-and-string-manipulation#sortcompareFunction)
 - [.concat()](https://github.com/robhaj/js-array-and-string-manipulation#pop)
-- [.join()](https://github.com/robhaj/js-array-and-string-manipulation#join)
+- [.join()](https://github.com/robhaj/js-array-and-string-manipulation#joinseperator)
 
 
 #### .pop()
