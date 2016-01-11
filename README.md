@@ -87,12 +87,14 @@ console.log(arr)
 > ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach']
 
 ```
-#### .splice(start, deleteCount)
+#### .splice(start, deleteCount[, item1[, item2[, ...]]])
+
 Adds and/or removes elements from an array.
 
 Arguments
-- start - Index at which to start changing the array.
-- deleteCount - An integer indicating the number of old array elements to remove.
+- start - Index at which to start changing the array. If greater than the length of the array, actual starting index will be set to the length of the array. If negative, will begin that many elements from the end.
+- deleteCount - An integer indicating the number of old array elements to remove. If deleteCount is 0, no elements are removed. In this case, you should specify at least one new element. If deleteCount is greater than the number of elements left in the array starting at start, then all of the elements through the end of the array will be deleted. If deleteCount is omitted, deleteCount will be equal to (arr.length - start).
+- itemN - The element to add to the array. If you don't specify any elements, splice() will only remove elements from the array.
 
 ###### Syntax
 ```js
@@ -120,12 +122,9 @@ console.log(arr)
 Extracts a section of an array and returns a new array. This is not destructive as the original array remains unchanged.
 
  Arguments
-- begin - Index at which to begin extraction.
+- begin - Index at which to begin extraction. If begin is omitted || === null, slice begins from index 0.
 
-<!-- If begin is omitted, slice begins from index 0.
-if begin === null, slice begins from 0 -->
-
-- end -  Index at which to end extraction. slice extracts up to but not including end. If end is omitted, slice extracts to the end of the sequence (arr.length).
+- end -  Index at which to end extraction. Slice extracts up to but not including end. If end is omitted, slice extracts to the end of the sequence (arr.length).
 
 ###### Syntax
 ```js
@@ -145,11 +144,10 @@ console.log(arr)
 ```
 
 #### .sort(compareFunction)
-Sorts the elements of an array in place and returns the array. If no compare function is passed as an argument it is sorted according to each character's Unicode code point value, according to the string conversion of each element. This is why just calling .sort() will not order numbers logically but rather their Unicode value.
+Sorts the elements of an array in place and returns the array. It has an optional argument which is a function to define the sort order. If no compare function is passed as an argument it is sorted according to each character's Unicode code point value, according to the string conversion of each element. This is why just calling .sort() will not order numbers logically but rather their Unicode value.
 
 Arguments
-- compareFunction
-Optional. Specifies a function that defines the sort order. If omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
+- compareFunction (Optional) Specifies a function that defines the sort order. If omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
 
 ###### Syntax
 ```js
@@ -171,19 +169,28 @@ arr = [15, 7, 22, 5, 91]
 arr.sort()
 > [15, 22, 5, 7, 91]
 ```
-#### .concat()
+#### .concat(value1[, value2[, ...[, valueN]]])
 Returns a new array comprised of this array joined with other array(s) and/or value(s).
+
+Parameters
+- valueN - Arrays and/or values to concatenate into a new array. See the description below for details.
 
 ###### Syntax
 ```js
 var arr1 = ['Mercury', 'Venus', 'Earth', 'Mars'];
 var arr2 = ['Jupiter','Saturn','Uranus','Neptune'];
+var str = 'Pluto';
 
-arr1.concat(arr2)
-> ['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune' ]
+var arr3 = arr1.concat(arr2)
+console.log(arr3)
+> ['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune']
+
+arr3.concat(str)
+> ['Mercury','Venus','Earth','Mars','Jupiter','Saturn','Uranus','Neptune','Pluto']
+
 ```
 #### .join(seperator)
-Joins all elements of an array into a string.
+Joins all elements of an array into a string. Takes an optional argument to specify a string to seperate each element.
 
 Arguments
 - separator (optional)
@@ -219,11 +226,11 @@ arr.join('')
 - [.toLowerCase()](https://github.com/robhaj/js-array-and-string-manipulation#tolowercase)
 - [.charAt()](https://github.com/robhaj/js-array-and-string-manipulation#charat)
 - [.slice()](https://github.com/robhaj/js-array-and-string-manipulation#slice)
-- [.split()]https://github.com/robhaj/js-array-and-string-manipulation#split)
+- [.split()](https://github.com/robhaj/js-array-and-string-manipulation#split)
 - [.trim()](https://github.com/robhaj/js-array-and-string-manipulation#trim)
 
 #### .concat(string2...stringN)
-Joins two or more strings, and returns a new joined strings
+Joins two or more strings, and returns a new joined strings. Alternatively you can use the arithmetic operator, +.
 
 Parameters
 - Strings to concatenate to this string.
@@ -235,6 +242,9 @@ var str2 = "world!";
 var str3 = " Have a nice day!";
 
 str1.concat(str2,str3)
+> 'Hello world! Have a nice day!'
+
+console.log(str1 + str2 + str3)
 > 'Hello world! Have a nice day!'
 ```
 #### .toUpperCase()
@@ -257,11 +267,11 @@ var str = 'HELLO WORLD!';
 str.toLowerCase()
 > 'hello world!'
 ```
-#### .charAt()
-Returns the character at the specified index
+#### .charAt(index)
+Returns the character at the specified index. Takes an index as a parameter.
 
 Parameters
-- Specified Index
+- Index
 
 ###### Syntax
 ```js
@@ -274,8 +284,8 @@ str.charAt(0)
 str.charAt(25)
 > 'Z'
 ```
-#### .slice()
-Extracts a part of a string and returns a new string
+#### .slice(beginSlice, endSlice)
+Extracts a part of a string and returns a new string. Takes two parameters: the index at which to begin slicing and optionally an index at which to end slicing.
 
 Parameters
 - beginSlice - The zero-based index at which to begin extraction. If negative, it is treated as sourceLength + beginSlice where sourceLength is the length of the string (for example, if beginSlice is -3 it is treated as sourceLength - 3).
@@ -300,8 +310,8 @@ str.slice(35, 40)
 > 'Apple'
 ```
 
-#### .split()
-Splits a string into an array of substrings
+#### .split(seperator, limit)
+Splits a string into an array of substrings. Takes two optional parameters to set the seperator and/or limit of splits.
 
 Parameters
 
