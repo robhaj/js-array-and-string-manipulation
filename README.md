@@ -13,11 +13,11 @@
 - [.pop()](https://github.com/robhaj/js-array-and-string-manipulation#pop)
 - [.push()](https://github.com/robhaj/js-array-and-string-manipulation#push)
 - [.shift()](https://github.com/robhaj/js-array-and-string-manipulation#shift)
-- [.unshift()](https://github.com/robhaj/js-array-and-string-manipulation#pop)
+- [.unshift()](https://github.com/robhaj/js-array-and-string-manipulation#unshift)
 - [.splice()](https://github.com/robhaj/js-array-and-string-manipulation#splicestart-deletecount)
 - [.slice()](https://github.com/robhaj/js-array-and-string-manipulation#slicebegin-end)
-- [.sort()](https://github.com/robhaj/js-array-and-string-manipulation#sortcompareFunction)
-- [.concat()](https://github.com/robhaj/js-array-and-string-manipulation#pop)
+- [.sort()](https://github.com/robhaj/js-array-and-string-manipulation#sortcomparefunction)
+- [.concat()](https://github.com/robhaj/js-array-and-string-manipulation#concat)
 - [.join()](https://github.com/robhaj/js-array-and-string-manipulation#joinseperator)
 
 
@@ -212,7 +212,15 @@ arr.join('')
 
 - String indexes are zero-based: The first character is in position 0, the second in 1, and so on.
 
-### String Methods
+### Some String Methods
+
+- [.concat()](https://github.com/robhaj/js-array-and-string-manipulation#concatstring2stringn)
+- [.toUpperCase()](https://github.com/robhaj/js-array-and-string-manipulation#touppercase)
+- [.toLowerCase()](https://github.com/robhaj/js-array-and-string-manipulation#tolowercase)
+- [.charAt()](https://github.com/robhaj/js-array-and-string-manipulation#chatat)
+- [.slice()](https://github.com/robhaj/js-array-and-string-manipulation#slice)
+- [.split(https://github.com/robhaj/js-array-and-string-manipulation#split)
+- [.trim()](https://github.com/robhaj/js-array-and-string-manipulation#trim)
 
 #### .concat(string2...stringN)
 Joins two or more strings, and returns a new joined strings
