@@ -100,24 +100,25 @@ Arguments
 ```js
 var arr = ['Robby', 'Bradley', 'Wes', 'Michael', 'Zach'];
 
-arr.splice(1, 1)
+arr.splice(1, 1, 'Jonathan')
 > ['Bradley']
 
 console.log(arr)
-> ['Robby', 'Wes', 'Michael', 'Zach']
+> ['Robby', 'Jonathan', 'Wes', 'Michael', 'Zach']
 
 arr.splice(2, 3)
-> ['Michael','Zach']
+> ['Wes', 'Michael' ,'Zach']
 
 console.log(arr)
-> ['Robby', 'Wes']
+> ['Robby', 'Jonathan']
 
 arr.splice(1)
-> ['Wes']
+> ['Jonathan']
 
 console.log(arr)
 > ['Robby']
 ```
+
 #### .slice(begin, end)
 Extracts a section of an array and returns a new array. This is not destructive as the original array remains unchanged.
 
@@ -438,16 +439,19 @@ console.log(+str)
 
 In JavaScript, almost "everything" is an object.
 
-- Booleans can be objects (or primitive data treated as objects)
-- Numbers can be objects (or primitive data treated as objects)
-- Strings can be objects (or primitive data treated as objects)
+- Booleans can be objects
+- Numbers can be objects
+- Strings can be objects
 - Dates are always objects
 - Maths are always objects
 - Regular expressions are always objects
 - Arrays are always objects
 - Functions are always objects
 - Objects are objects
-Basically, in Javascript, all values except primitive values are objects.
+- Basically, in Javascript, all values except primitive values are objects.
+
+- Objects can contain many values.
+- The values are written as name : value pairs (name and value separated by a colon).
 
 #### for...in loop
 - Iterates over the properties of an object and can be used to return either one of the key value pairs at that point in the object.
