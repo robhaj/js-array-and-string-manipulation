@@ -384,6 +384,8 @@ console.log(res)
 > "DonutsMcCookie Herman"
 ```
 
+<hr>
+
 ## Manipulating numbers
 
 ### Numbers
@@ -432,6 +434,8 @@ console.log(typeof num)
 console.log(+str)
 > 5.666667
 ```
+
+<hr>
 
 ## Manipulating Objects
 
