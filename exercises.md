@@ -163,6 +163,34 @@ Using ```.trim()``` :
 
 1. Write a function to remove every item in an array that is not a number.
 
+1. Write a JavaScript function to get a random item from an array.
+
+1. Write a function that will take in a string and returns that same string in reverse.
+
+1. Write a JavaScript function that reverse a number e.g.
+```js
+Example x = 32243;
+Expected Output : 34223
+```
+
+1. Write a JavaScript function that takes in a string and returns it with letters in alphabetical order
+
+1. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
+```js
+Example string = 'Web Development Tutorial'
+Expected Output => 'Development'
+```
+
 1. Write a function to add up all the numbers in any given year. The year will be given as a string, the output should be a number. For example the input ```'1470'``` should give ```12```
 
 1. Write a function that will take in an array of full names, and only return the first name of each person. For example ```['Bradley Bouley', 'Robert Hajek']``` should return ```['Bradley', 'Robert']```
+
+1. Write a JavaScript program which accepts a string as input and swap the case of each character. For example if you input ```'The Quick Brown Fox'``` the output should be ```'tHE qUICK bROWN fOX'```.
+
+1. Write a JavaScript function to merge two arrays and removes all duplicates elements. e.g.
+```js
+var array1 = [1, 2, 3];
+var array2 = [2, 30, 1];
+console.log(merge_array(array1, array2));
+[3, 2, 30, 1]
+```
