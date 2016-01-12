@@ -1,4 +1,4 @@
-# Array and String Methods in JavaScript
+# Array, String, Object, and Number Methods in JavaScript
 
 ## Manipulating Arrays
 ### Arrays
@@ -337,12 +337,71 @@ str.trim()
 > '1-800-867-5309'
 ```
 
-#### .replace()
+#### .replace(regexp|substr, newSubStr|function[, flags])
+
+Parameters
+
+- regexp (pattern) - A RegExp object. The match is replaced by the return value of parameter #2.
+- substr (pattern) - A String that is to be replaced by newSubStr. It is treated as a verbatim string and is not interpreted as a regular expression.
+- newSubStr (replacement) - The String that replaces the substring received from parameter #1.
+- function (replacement) - A function to be invoked to create the new substring (to put in place of the substring received from parameter #1)
 
 
 ###### Syntax
 ```js
-var str = 'test';
+var str = "Michael Herman!";
+var res = str.replace("Michael", "DonutsMcCookie");
 
-str.replace()
+console.log(res)
+> "DonutsMcCookie Herman"
+```
+
+## Manipulating numbers
+
+### Numbers
+
+- JavaScript has only one type of number.
+- Unlike many other programming languages, JavaScript does not define different types of numbers, like integers, short, long, floating-point etc.
+- JavaScript numbers can be written with, or without decimals:
+- NaN is a JavaScript reserved word indicating that a value is not a number.
+
+
+#### parseInt()
+
+Parses its argument and returns an integer
+
+###### Syntax
+
+```js
+var str = '5.66';
+var num = parseInt(str);
+
+console.log(num)
+> 5
+
+num = parseInt(str)
+console.log(typeof num)
+> 'number'
+
+```
+
+#### parseFloat()
+
+Parses its argument and returns a floating point number
+
+
+###### Syntax
+
+```js
+var str = '5.666667';
+var num = parseFloat(str);
+
+console.log(num)
+> 5.666667
+
+console.log(typeof num)
+> 'number'
+
+console.log(+str)
+> 5.666667
 ```
