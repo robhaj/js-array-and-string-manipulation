@@ -14,10 +14,10 @@
 - [.push()](https://github.com/robhaj/js-array-and-string-manipulation#push)
 - [.shift()](https://github.com/robhaj/js-array-and-string-manipulation#shift)
 - [.unshift()](https://github.com/robhaj/js-array-and-string-manipulation#unshift)
-- [.splice()](https://github.com/robhaj/js-array-and-string-manipulation#splicestart-deletecount)
+- [.splice()](https://github.com/robhaj/js-array-and-string-manipulation#splicestart-deletecount-item1-item2-)
 - [.slice()](https://github.com/robhaj/js-array-and-string-manipulation#slicebegin-end)
 - [.sort()](https://github.com/robhaj/js-array-and-string-manipulation#sortcomparefunction)
-- [.concat()](https://github.com/robhaj/js-array-and-string-manipulation#concat)
+- [.concat()](https://github.com/robhaj/js-array-and-string-manipulation#concatvalue1-value2--valuen)
 - [.join()](https://github.com/robhaj/js-array-and-string-manipulation#joinseperator)
 
 
@@ -251,11 +251,11 @@ console.log(fruits.indexOf("Apple", 4))
 - [.concat()](https://github.com/robhaj/js-array-and-string-manipulation#concatstring2stringn)
 - [.toUpperCase()](https://github.com/robhaj/js-array-and-string-manipulation#touppercase)
 - [.toLowerCase()](https://github.com/robhaj/js-array-and-string-manipulation#tolowercase)
-- [.charAt()](https://github.com/robhaj/js-array-and-string-manipulation#charat)
-- [.slice()](https://github.com/robhaj/js-array-and-string-manipulation#slice)
-- [.split()](https://github.com/robhaj/js-array-and-string-manipulation#split)
+- [.charAt()](https://github.com/robhaj/js-array-and-string-manipulation#charatindex)
+- [.slice()](https://github.com/robhaj/js-array-and-string-manipulation#slicebeginslice-endslice)
+- [.split()](https://github.com/robhaj/js-array-and-string-manipulation#splitseperator-limit)
 - [.trim()](https://github.com/robhaj/js-array-and-string-manipulation#trim)
-- [.replace()](https://github.com/robhaj/js-array-and-string-manipulation#replace)
+- [.replace()](https://github.com/robhaj/js-array-and-string-manipulation#replaceregexpsubstr-newsubstrfunction-flags)
 
 #### .concat(string2...stringN)
 Joins two or more strings, and returns a new joined strings. Alternatively you can use the arithmetic operator, +.
