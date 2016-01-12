@@ -432,6 +432,23 @@ console.log(+str)
 > 5.666667
 ```
 
+## Manipulating Objects
+
+### Objects
+
+In JavaScript, almost "everything" is an object.
+
+- Booleans can be objects (or primitive data treated as objects)
+- Numbers can be objects (or primitive data treated as objects)
+- Strings can be objects (or primitive data treated as objects)
+- Dates are always objects
+- Maths are always objects
+- Regular expressions are always objects
+- Arrays are always objects
+- Functions are always objects
+- Objects are objects
+Basically, in Javascript, all values except primitive values are objects.
+
 #### for...in loop
 - Iterates over the properties of an object and can be used to return either one of the key value pairs at that point in the object.
 - You should only use a ```for...in``` loop when iterating over an object, although it can be used for arrays as well, you should use a ```for``` loop with a numeric index
