@@ -431,3 +431,21 @@ console.log(typeof num)
 console.log(+str)
 > 5.666667
 ```
+
+#### for...in loop
+- Iterates over the properties of an object and can be used to return either one of the key value pairs at that point in the object.
+- You should only use a ```for...in``` loop when iterating over an object, although it can be used for arrays as well, you should use a ```for``` loop with a numeric index
+
+###### Syntax
+```js
+var obj = { a:'alpha', b:'beta', c:'gamma' };
+
+for (var prop in obj) {
+  console.log("obj." + prop + " = " + obj[prop]);
+}
+
+// Output:
+// "obj.a = alpha"
+// "obj.b = beta"
+// "obj.c = gamma"
+```
