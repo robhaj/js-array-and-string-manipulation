@@ -211,6 +211,33 @@ arr.join('')
 > 'Thequickbrownfoxjumpedoverthelazydog'
 ```
 
+#### .indexOf(item,start)
+
+The indexOf() method searches the array for the specified item, and returns its position.
+
+The search will start at the specified position, or at the beginning if no start position is specified, and end the search at the end of the array.
+
+Returns -1 if the item is not found.
+
+If the item is present more than once, the indexOf method returns the position of the first occurrence.
+
+Parameters
+- item - The item to search for.
+- start (optional) - Where to start the search. Negative values will start at the given position counting from the end, and search to the end.
+
+###### Syntax
+
+```js
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+console.log(fruits.indexOf("Apple"))
+> 2
+
+var fruits = ["Banana", "Orange", "Apple", "Mango", "Banana", "Orange", "Apple"];
+
+console.log(fruits.indexOf("Apple", 4))
+> 6
+```
 <hr>
 
 ## Manipulating Strings
@@ -379,7 +406,6 @@ var num = parseInt(str);
 console.log(num)
 > 5
 
-num = parseInt(str)
 console.log(typeof num)
 > 'number'
 
